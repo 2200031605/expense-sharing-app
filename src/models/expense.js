@@ -4,8 +4,8 @@ class Expense {
     this.groupId = groupId;
     this.paidBy = paidBy;
     this.amount = amount;
-    this.splitType = splitType; // EQUAL | EXACT | PERCENT
-    this.splits = splits; // [{ userId, amount }]
+    this.splitType = splitType; 
+    this.splits = splits; 
   }
 }
 

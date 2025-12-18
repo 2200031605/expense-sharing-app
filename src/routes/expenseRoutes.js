@@ -6,7 +6,7 @@ const router = express.Router();
 
 const expenses = [];
 
-// Add expense
+
 router.post('/', (req, res) => {
   const { id, groupId, paidBy, amount, splitType, splits } = req.body;
   const expense = new Expense(id, groupId, paidBy, amount, splitType, splits);
@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
   res.json(expense);
 });
 
-// Get balances
+
 router.get('/balances', (req, res) => {
   const balances = calculateBalances(expenses);
   res.json(balances);

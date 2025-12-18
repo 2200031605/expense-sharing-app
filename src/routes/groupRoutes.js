@@ -5,7 +5,7 @@ const router = express.Router();
 
 const groups = [];
 
-// Create group
+
 router.post('/', (req, res) => {
   const { id, name, members } = req.body;
   const group = new Group(id, name, members);
@@ -13,7 +13,7 @@ router.post('/', (req, res) => {
   res.json(group);
 });
 
-// Get all groups
+
 router.get('/', (req, res) => {
   res.json(groups);
 });
